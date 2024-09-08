@@ -1,6 +1,6 @@
 function topKFrequent(arr, N, K) {
 	let mp = new Map();
-	let temp = 0;
+
 	for (let i = 0; i < N; i++) {
 		if (mp.has(arr[i])) {
 			mp.set(arr[i], mp.get(arr[i]) + 1);
@@ -8,11 +8,8 @@ function topKFrequent(arr, N, K) {
 			mp.set(arr[i], 1);
 		}
 		if (mp.get(arr[i]) == K) {
-			temp = arr[i];
-			break;
+			return arr[i];
 		}
 	}
-
-	return temp;
 }
-topKFrequent([3, 1, 4, 4, 5, 2, 6, 1], 8, 2);
+console.log(topKFrequent([3, 1, 4, 4, 5, 2, 6, 1], 8, 2));
