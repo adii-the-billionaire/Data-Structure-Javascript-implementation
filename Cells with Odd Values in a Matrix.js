@@ -6,6 +6,7 @@ let indices = [
 	[0, 1],
 	[1, 1],
 ];
+let count = 0;
 
 //for row side
 for (let i = 0; i < indices.length; i++) {
@@ -22,4 +23,13 @@ for (let i = 0; i < indices.length; i++) {
 	}
 }
 
+for (let i = 0; i < matrix.length; i++) {
+	for (let j = 0; j < matrix[i].length; j++) {
+		if (matrix[i][j] % 2 != 0) {
+			count++;
+		}
+	}
+}
+
 console.log(matrix);
+console.log(count);
