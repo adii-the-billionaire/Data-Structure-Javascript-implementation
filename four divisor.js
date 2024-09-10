@@ -7,15 +7,14 @@ var solve = function (array) {
 		for (let j = 1; j <= 21; j++) {
 			if (array[i] % j == 0) {
 				count++;
-
 				sum1 = sum1 + j;
 			}
-			if (count == 4) {
-				sum = sum + sum1;
-			}
+		}
+		if (count == 4) {
+			sum = sum + sum1;
 		}
 	}
 	return sum;
 };
 
-solve([21, 21]);
+console.log(solve([7286, 18704, 70773, 8224, 91675]));
