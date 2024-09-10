@@ -13,7 +13,7 @@ var subtractProductAndSum = function (n) {
 		sum = sum + parseInt(num[i]);
 	}
 	console.log(sum);
-	//console.log(product);
+
 	return product - sum;
 };
 subtractProductAndSum(234);
