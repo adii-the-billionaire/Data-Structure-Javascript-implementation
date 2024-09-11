@@ -1,5 +1,1 @@
-
-	return coutnDiv;
-};
-
-console.log(solve(24));
+0000 0000 0000 0000 0000 0000 0000 0010;
