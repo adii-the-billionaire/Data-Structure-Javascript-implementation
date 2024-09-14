@@ -5,7 +5,8 @@ var chalkReplacer = function (chalk, k) {
 	while (kk > 0) {
 		for (let i = 0; i < chalk.length; i++) {
 			kk = kk - chalk[i];
-			if (kk <= 0) {
+			//console.log(kk, chalk[i]);
+			if (kk < 0 || k < chalk[i]) {
 				b = i;
 				break;
 			}
@@ -13,4 +14,4 @@ var chalkReplacer = function (chalk, k) {
 	}
 	return b;
 };
-console.log(chalkReplacer([7, 7, 7], 2));
+console.log(chalkReplacer([3, 4, 1, 2], 25));
