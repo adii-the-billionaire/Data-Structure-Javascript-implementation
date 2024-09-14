@@ -10,4 +10,4 @@ var solve = function (n) {
 
 	return temp;
 };
-console.log(solve(83));
+console.log(solve(3));
