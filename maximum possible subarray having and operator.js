@@ -17,12 +17,15 @@ var solve = function (nums) {
 	//now check the max value have same from iterate the value
 
 	while (index < nums.length) {
-		if (nums[index] == nums[index + 1]) {
+		if (nums[index] !== nums[index + 1]) {
+			break;
+		} else {
 			count++;
 		}
 		index++;
 	}
+
 	return count;
 };
 
-console.log(solve([1, 2, 2, 2, 3, 3, 1, 5, 5, 5, 5]));
+console.log(solve([1]));
